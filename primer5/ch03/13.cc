@@ -1,9 +1,7 @@
 #include <iostream>
 #include <vector>
 
-using std::cout;
-using std::endl;
-using std::string;
+using namespace std;
 
 int main(int argc, char *argv[])
 {
@@ -11,7 +9,15 @@ int main(int argc, char *argv[])
     int *pbeg = begin(arr);
     int *pend = end(arr);
     while (pbeg != pend && *pbeg >=0) {
-        cout << *pbeg << endl;
+        cout << *pbeg << " ";
         ++pbeg;
     }
+    cout << endl;
 }
+
+////////////////////////////////////////////////////
+// <===================OUTPUT===================> //
+// $ g++ --std=c++11 13.cc                        //
+// $ ./a.out                                      //
+// 0 1 2 3 4 5 6 7 8 9                            //
+////////////////////////////////////////////////////
